@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azulejos</title>
+</head>
+<body>
+    <script>
+        alert("Vamos calcular a área da cozinha.")
+        let comprimento = parseFloat(prompt("Digite o comprimento da cozinha em metros: "));
+        let largura = parseFloat(prompt("Digite a largura da cozinha em metros: "));
+        
+
+        let area = (comprimento * largura);
+        alert(`A área da sua cozinha é de ${area} m².`);
+
+        let azulejos = (area) / 2.5;
+        alert(`Você precisará de ${azulejos} caixas de azulejos para revestir o chão da cozinha.`);
+    </script>
+</body>
+</html>
