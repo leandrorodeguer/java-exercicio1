@@ -1,1 +1,1 @@
-# java-exercicio1
+# java-exercicios
