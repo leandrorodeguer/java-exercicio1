@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta do Restaurante</title>
+</head>
+
+<body>
+    <script>
+        alert("Vamos calcular a conta de um restaurante + 10% do garçom")
+        const entrada = parseFloat(prompt('Valor da entrada R$'));
+        const pratoprincipal = parseFloat(prompt('Valor do prato principal R$'));
+        const sobremesa = parseFloat(prompt('Valor da sobremesa R$'));
+
+        function calcula_conta() {
+            conta = (entrada + pratoprincipal + sobremesa);
+            return conta;
+        }
+
+        conta = calcula_conta() * 1.10;
+
+        alert(`A conta + o valor do garçom é ${Math.round(conta)}.`);
+    </script>
+</body>
+
+</html>
