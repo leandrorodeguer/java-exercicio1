@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Ponderada</title>
+</head>
+
+<body>
+    <script>
+        alert("Vamos calcular a média ponderada de um aluno.")
+        const nota1 = parseInt(prompt('Nota da primeira prova:'));
+        const nota2 = parseInt(prompt('Nota da segunda prova:'));
+        const matricula = parseInt(prompt('Insira o número da matrícula:'));
+
+        function calcula_media_ponderada() {
+            mediaponderada = ((nota1 * 1) + (nota2 * 2)) / 2;
+            return mediaponderada;
+        }
+
+        mediaponderada = calcula_media_ponderada();
+
+        alert(`O aluno de matrícula nº: ${matricula} tem média ponderada de ${mediaponderada}.`);
+    </script>
+</body>
+
+</html>

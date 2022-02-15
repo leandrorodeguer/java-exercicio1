@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média e Produto dos Números</title>
+</head>
+
+<body>
+    <script>
+        alert("Vamos calcular a média e o produto de 2 números")
+        const valor1 = parseInt(prompt('Digite o primeiro número:'));
+        const valor2 = parseInt(prompt('Digite o segundo número'));
+
+        function calcula_media() {
+            medianumeros = (valor1 + valor2) / 2;
+            return medianumeros;
+        }
+
+        medianumeros = calcula_media();
+
+        alert(`A média desses dois números é ${medianumeros}.`);
+
+        function calcula_produto() {
+            produtonumeros = (valor1 * valor2);
+            return produtonumeros;
+        }
+
+        produtonumeros = calcula_produto();
+
+        alert(`O produto desses dois números é ${produtonumeros}.`);
+    </script>
+</body>
+
+</html>

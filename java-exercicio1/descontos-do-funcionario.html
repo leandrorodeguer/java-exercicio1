@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descontos do Funcionário</title>
+</head>
+
+<body>
+    <script>
+        alert("Vamos calcular os descontos de um funcionário.")
+        const salario = parseFloat(prompt('Insira o valor do salário bruto R$'));
+
+        function calcula_inss() {
+            inss = (salario) * 0.1;
+            return inss;
+        }
+
+        inss = calcula_inss();
+
+        function calcula_fgts() {
+            fgts = (salario) * 0.08;
+            return fgts;
+        }
+
+        fgts = calcula_fgts();
+
+        function calcula_saude() {
+            saude = (salario) - 100;
+            return saude;
+        }
+
+        saude = calcula_saude();
+
+        alert(`Desconto de INSS R$ ${Math.round(inss)}.`);
+        alert(`Desconto de FGTS R$ ${Math.round(fgts)}.`);
+        alert("Seu plano de saúde custa R$ 100.")
+        alert(`Salário com desconto do plano de saúde R$ ${Math.round(saude)}.`);
+    </script>
+</body>
+
+</html>

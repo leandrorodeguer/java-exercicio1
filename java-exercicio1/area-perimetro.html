@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área e perímetro de uma sala</title>
+</head>
+<body>
+    <script>
+        alert("Vamos calcular a área e o perímetro de uma sala.")
+        let comprimento = parseFloat(prompt("Digite o comprimento da sala em metros: "));
+        let largura = parseFloat(prompt("Digite a largura da sala em metros: "));
+
+
+        let area = (comprimento * largura);
+        alert(`A área da sua sala é de ${area} m².`);
+
+        let perimetro = (comprimento) * 2 + (largura) * 2;
+        alert(`O perímetro da sua sala é de ${perimetro} m.`);
+    </script>
+</body>
+</html>

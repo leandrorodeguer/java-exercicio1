@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto das Notas</title>
+</head>
+
+<body>
+    <script>
+        alert("Vamos calcular o produto das notas.")
+        const nota_prod1 = parseInt(prompt('Nota da primeira prova:'));
+        const nota_prod2 = parseInt(prompt('Nota da segunda prova:'));
+        const matricula_aluno = parseInt(prompt('Insira o número da matrícula:'));
+
+        function calcula_produto_notas() {
+            produtodasnotas_aluno = (nota_prod1 * nota_prod2);
+            return produtodasnotas_aluno;
+        }
+
+        produtodasnotas_aluno = calcula_produto_notas();
+
+        alert(`O aluno de matrícula nº: ${matricula_aluno} tem como produto das notas ${produtodasnotas_aluno}.`);
+    </script>
+</body>
+
+</html>

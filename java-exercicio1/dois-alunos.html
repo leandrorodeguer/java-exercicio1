@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto das notas de 2 alunos</title>
+</head>
+
+<body>
+    <script>
+        alert("Vamos calcular o produto das notas de 2 alunos.")
+        const nota1aluno1 = parseInt(prompt('Nota da primeira prova do 1º aluno:'));
+        const nota2aluno1 = parseInt(prompt('Nota da segunda prova do 1º aluno:'));
+        const matriculaaluno1 = parseInt(prompt('Insira o número da matrícula:'));
+
+        function calcula_produto_aluno1() {
+            prod_notas_aluno1 = (nota1aluno1 * nota2aluno1);
+            return prod_notas_aluno1;
+        }
+
+        produtodasnotas = calcula_produto_aluno1();
+
+        alert(`O aluno de matrícula nº: ${matriculaaluno1} tem como produto das notas ${prod_notas_aluno1}.`);
+
+        const nota1aluno2 = parseInt(prompt('Nota da primeira prova do 2º aluno:'));
+        const nota2aluno2 = parseInt(prompt('Nota da segunda prova do 2º aluno:'));
+        const matriculaaluno2 = parseInt(prompt('Insira o número da matrícula:'));
+
+        function calcula_produto_aluno2() {
+            prod_notas_aluno2 = (nota1aluno2 * nota2aluno2);
+            return prod_notas_aluno1;
+        }
+
+        produtodasnotas = calcula_produto_aluno2();
+
+        alert(`O aluno de matrícula nº: ${matriculaaluno2} tem como produto das notas ${prod_notas_aluno2}.`);
+    </script>
+</body>
+
+</html>
