@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de fixação em Java - parte 3</title>
+</head>
+
+<body>
+    <script>
+        //aprovado ou reprovado
+        alert("Vamos calcular a média de notas de um aluno.")
+        alert("Média < 7 Reprovado. Média >= 7 Aprovado.  Média = 10 Aprovado com Distinção")
+        const primeiranota = parseInt(prompt('Nota da primeira prova:'));
+        const segundanota = parseInt(prompt('Nota da segunda prova:'));
+
+        function media_notas() {
+            medianotas = (primeiranota + segundanota) / 2;
+            return medianotas;
+        }
+        medianotas = media_notas();
+
+        if (medianotas < 7) {
+            alert("Reprovado");
+        } else if (medianotas == 10) {
+            alert("Aprovado com Distinção");
+        } else alert("Aprovado");
+
+        //aumento salarial
+        alert("Vamos calcular o aumento salarial dos funcionários.")
+        const salarioatual = parseInt(prompt('Digite o salário atual R$'));
+
+
+        if (salarioatual <= 280) {
+            function aumento1() {
+                aumentosalarial1 = (salarioatual) * 1.20;
+                return aumentosalarial1;
+            }
+            aumentosalarial1 = aumento1();
+            alert(
+                `Seu salário anterior era de R$ ${salarioatual}. Você teve um aumento de 20%, equivalente a R$ ${salarioatual * 0.2}. Por tanto seu novo salário é R$ ${Math.round(aumentosalarial1)}.`)
+        } else if (salarioatual < 700) {
+            function aumento2() {
+                aumentosalarial2 = (salarioatual) * 1.15;
+                return aumentosalarial2;
+            }
+            aumentosalarial2 = aumento2();
+            alert(
+                `Seu salário anterior era de R$ ${salarioatual}. Você teve um aumento de 15%, equivalente a R$ ${salarioatual * 0.15}. Por tanto seu novo salário é R$ ${Math.round(aumentosalarial2)}.`)
+        } else if (salarioatual < 1500) {
+            function aumento3() {
+                aumentosalarial3 = (salarioatual) * 1.10;
+                return aumentosalarial3;
+            }
+            aumentosalarial3 = aumento3();
+            alert(
+                `Seu salário anterior era de R$ ${salarioatual}. Você teve um aumento de 10%, equivalente a R$ ${salarioatual * 0.10}. Por tanto seu novo salário é R$ ${Math.round(aumentosalarial3)}.`)
+        } else if (salarioatual >= 1500) {
+            function aumento4() {
+                aumentosalarial4 = (salarioatual) * 1.05;
+                return aumentosalarial4;
+            }
+            aumentosalarial4 = aumento4();
+            alert(
+                `Seu salário anterior era de R$ ${salarioatual}. Você teve um aumento de 5%, equivalente a R$ ${salarioatual * 0.05}. Por tanto seu novo salário é R$ ${Math.round(aumentosalarial4)}.`)
+        }
+
+        //cálculo de FGTS
+        alert("Vamos calcular a folha de pagamentos dos funcionários.");
+        const valorhora = parseInt(prompt('Digite o valor da hora R$'));
+        const horas = parseInt(prompt('Digite a quantidade de horas'));
+
+        function salario_bruto() {
+            salariobruto = (valorhora * horas);
+            return salariobruto;
+        }
+        salariobruto = salario_bruto();
+
+        let fgts = salariobruto * 0.11;
+        let inss = salariobruto * 0.10;
+
+        if (salariobruto <= 900) {
+            function isento() {
+                ir1 = 0;
+                return ir1;
+            }
+            ir1 = isento();
+            alert(
+                `Salário bruto R$ ${salariobruto}. Você está isento de IR. Desconto INSS (10%) = R$ ${inss}. Valor de FGTS (11%) = R$ ${fgts}. Total de descontos R$ ${inss}. Salário líquido R$ ${salariobruto - inss}`
+            )
+        } else if (salariobruto <= 1500) {
+            function cinco() {
+                ir2 = (salariobruto * 0.05);
+                return ir2;
+            }
+            ir2 = cinco();
+            alert(
+                `Salário bruto R$ ${salariobruto}. Desconto IR (5%) = R$ ${ir2}. Desconto INSS (10%) = R$ ${inss}. Valor de FGTS (11%) = R$ ${fgts}. Total de descontos R$ ${inss + ir2}. Salário líquido R$ ${salariobruto - inss - ir2}`
+            )
+        } else if (salariobruto <= 2500) {
+            function dez() {
+                ir3 = (salariobruto * 0.10);
+                return ir3;
+            }
+            ir3 = dez();
+            alert(
+                `Salário bruto R$ ${salariobruto}. Desconto IR (10%) = R$ ${ir3}. Desconto INSS (10%) = R$ ${inss}. Valor de FGTS (11%) = R$ ${fgts}. Total de descontos R$ ${inss + ir3}. Salário líquido R$ ${salariobruto - inss - ir3}`
+            )
+        } else if (salariobruto > 2500) {
+            function vinte() {
+                ir4 = (salariobruto * 0.20);
+                return ir4;
+            }
+            ir4 = vinte();
+            alert(
+                `Salário bruto R$ ${salariobruto}. Desconto IR (20%) = R$ ${ir4}. Desconto INSS (10%) = R$ ${inss}. Valor de FGTS (11%) = R$ ${fgts}. Total de descontos R$ ${inss + ir4}. Salário líquido R$ ${salariobruto - inss - ir4}`
+            )
+        }
+    </script>
+</body>
+
+</html>
